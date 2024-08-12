@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    background-color: #f9fafc;
+     font-family: "Open Sans", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: 400;
+     font-style: normal;
+     font-variation-settings:
+       "wdth" 100;
+}
+
+button {
+    background-color: #000;
+    color: #fff;
+    width: 90vw;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+
+a {
+    text-decoration: none;
+    color: #69696a
+}
+
+ul {
+    list-style-type: none;
+}
+
+#top-nav {
+    padding-left: 5px;
+    margin-left: 10px;
+}
+
+#top-nav, li {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5px;
+}
+
+h1 {
+    color: #000;
+    margin-left: 10px;
+}
+
+#lefty {
+    margin-left: 10px;
+    border-left: 5px solid #69696a;
+}
+
+p {
+    color:#69696a;
+    padding: 5px;
+}
+
+#call {
+    margin-left: 10px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0%;
+    width: 100vw;
+    background-color: rgba(247, 193, 162, 0.7);
+
+}
+
+#chirp {
+    position: absolute;
+    bottom: 35%;
+    padding-left: 10px;
+}
+
+#top-chirp {
+    color: #000;
+}
+
+#bottom-nav {
+    display: flex;
+    justify-content: flex-end;
+
+    li {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+
+    /* here is where it gets interesting */
+
+    #top-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+    }
+
+    #top-nav li {
+        margin: 0px 10px
+    }
+
+    #hire {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        max-width: 80px;
+        margin-right: 10px;
+    }
+
+    #lefty {
+        max-width: 50vw;
+    }
+
+    #call {
+        max-width: 50vw;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+
+
+
+    .circle1 {
+        height: 200px;
+        width: 200px;
+        background-color: rgba(247, 136, 167, 0.6);
+        border-radius: 50%;
+        position: absolute;
+        top: 25%;
+        right: 8%;
+        
+    }
+
+    .circle2 {
+        height: 150px;
+        width: 150px;
+        background-color: rgba(247, 193, 162, 0.7);
+        border-radius: 50%;
+        position: absolute;
+        top: 38%;
+        right: 5%;
+    }
+
+    .circle3 {
+        height: 100px;
+        width: 100px;
+        background-color: rgba(207, 130, 213, 0.6);
+        border-radius: 50%;
+        position: absolute;
+        top: 30%;
+        right: 5%;
+    }
+}
